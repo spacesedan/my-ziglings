@@ -59,6 +59,6 @@ pub fn main() void {
     , .{
         @intFromEnum(Color.red),
         @intFromEnum(Color.green),
-        @intFromEnum(???), // Oops! We're missing something!
+        @intFromEnum(Color.blue), // Oops! We're missing something!
     });
 }
