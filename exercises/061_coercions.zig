@@ -67,7 +67,9 @@ const print = @import("std").debug.print;
 pub fn main() void {
     var letter: u8 = 'A';
 
-    const my_letter:   ???   = &letter;
+    // optional '?' first
+    // pointer '*' second
+    const my_letter: ?*[1]u8 = &letter;
     //               ^^^^^^^
     //           Your type here.
     // Must coerce from &letter (which is a *u8).
